@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5: Professional Layout & Tables</title>
+    <style>
+        /* Thodi si styling taaki table sundar dikhe */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f7f6; }
+        header { background: #333; color: #fff; padding: 1rem; text-align: center; border-radius: 8px 8px 0 0; }
+        nav { margin-top: 10px; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        main { background: #fff; padding: 20px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #4CAF50; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; cursor: pointer; } /* Hover effect! */
+        footer { text-align: center; margin-top: 20px; font-size: 0.9rem; color: #666; }
+        .status-badge { background: #e8f5e9; color: #2e7d32; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Study Progress Dashboard</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="https://github.com/itsdishayk">GitHub</a>
+            <a href="#">Projects</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Welcome to Day 5 Learning</h2>
+            <p>Today's focus was on structuring data using HTML Tables and organizing the page with Semantic Tags.</p>
+        </article>
+
+        <section>
+            <h3>📊 Semester Academic Tracker</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Status</th>
+                        <th>Target Grade</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data Structures (DSA)</td>
+                        <td><span class="status-badge">In Progress</span></td>
+                        <td>A+</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Calculus (Integration)</td>
+                        <td><span class="status-badge">7.2 Ongoing</span></td>
+                        <td>A</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development (HTML)</td>
+                        <td><span class="status-badge">Day 5 Done</span></td>
+                        <td>A+</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="text-align: right; font-weight: bold;">Expected CGPA:</td>
+                        <td style="font-weight: bold;">8.7</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <aside style="background: #fff3cd; padding: 10px; border-left: 5px solid #ffecb5; margin-top: 20px;">
+            <strong>💡 Quick Note:</strong> Don't forget to push this to GitHub Pages to see the live hover effects!
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 itsdishayk | Built with ☕ and Determination</p>
+    </footer>
+
+</body>
+</html>
